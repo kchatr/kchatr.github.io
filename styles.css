@@ -235,7 +235,7 @@ html{
 }
 
 .skills{
-  background-color: #dadada;
+  background-color: #1392db;
 }
 
 .skills h1{
@@ -245,7 +245,7 @@ html{
 
 .card-title{
   text-align: center;
-  color: #dadada;
+  color: #1392db;
 }
 .card-img{
   filter: invert(91%) sepia(0%) saturate(3552%) hue-rotate(43deg) brightness(92%) contrast(105%);
@@ -255,3 +255,6 @@ html{
   filter: invert(69%) sepia(99%) saturate(4994%) hue-rotate(175deg) brightness(94%) contrast(85%);
 }
 
+.card:hover{
+  box-shadow: -2px 9px 40px -12px rgba(255, 255, 255, 0.75);
+}
