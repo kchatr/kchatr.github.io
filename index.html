@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"/>
+        <meta charset = "UTF-8"/>
+        <meta name = "author" content = "Kaushik Chatterjee (https://github.com/kchatr)"/>
+        <meta name = "description" content = "A personal portfolio website, showcasing the skills and achievements of Kaushik Chatterjee" />
+        <meta http-equiv="Cache-control" content="no-cache">
+        <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+        crossorigin="anonymous" 
+        >
+        <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+        <script src='main.js'></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> -->
+        <noscript>Your browser does not support or is blocking JavaScript</noscript>
+        <title>🅚 | 🅒</title>
+    </head>
+
+    <body onload = "location.href='#'">
+        <!--Navbar HTML-->
+        <nav class = "navbar navbar-expand-lg fixed-top">
+            <a class = "navbar-brand" href = "#">&ltKaushik&gt</a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+                <ul class = "navbar-nav mr-4">
+                    <li class = "nav-item">
+                        <a class = "nav-link" data-value = "about" href = "#about">About 
+                        </a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" data-value = "skills" href = "#skills">Skills</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" data-value = "projects" href = "#projects">Projects</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" data-value = "articles" href = "#articles">Articles</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" data-value = "achievements" href = "#achievements">Achievements</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Header HTML-->
+        <header class = "header">
+            <div class = "overlay">
+                <div id="particles-js"></div>
+                <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+                <script>
+                    particlesJS.load("particles-js", "./assets/particles.json", function(){
+                        console.log("particles.json load successful...")
+                    })
+                </script>
+            </div>
+            
+            <div class = "container">
+                <div class = "description">
+                    <h1>Kaushik Chatterjee</h1>
+                    <div><p id = "typing-animation">Software Developer</p></div>
+                    <a href = "#about"> 
+                    <button class="btn btn-outline-secondary btn-lg">View more</button>
+                    </a>
+                    <!-- <a href="#about" class="btn btn-primary btn-lg" role="button" aria-disabled="true">View more</a> -->
+                </div>
+                <!--HTML for the Wave Animation-->
+                <svg class="editorial"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28 "
+                    preserveAspectRatio="none">
+                <defs>
+                <path id="gentle-wave"
+                d="M-160 44c30 0 
+                58-18 88-18s
+                58 18 88 18 
+                58-18 88-18 
+                58 18 88 18
+                v44h-352z" />
+                </defs>
+                <g class="parallax1">
+                <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+                </g>
+                <g class="parallax2">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+                </g>
+                    <g class="parallax3">
+                <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+                </g>
+                <g class="parallax4">
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
+                </g>
+            </svg>
+            </div>
+        </header>
+
+        <a name="about"></a>
+        <div class = "about">
+            <div class = "container">
+                <h1 class = "text-center" id = "about-me">About Me</h1>
+                <div class = "row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="pattern-dots-md blue">
+                        <img style="transform:translate(2px, -10px);" src=img/profile-photo.jpg class="img-fluid">
+                        </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                            <h3>Kaushik Chatterjee</h3>
+                            <p>I'm Kaushik Chatterjee - a programmer, innovator, and tech enthusiast.
+                            Currently, I am a student at the Woodlands Secondary School as part of their Enhanced Learning program.
+                            I love learning about exponential technologies, currently researching the field of Artificial Intelligence and Machine Learning.
+                            I also have a passion for mathematics and statistics, as well as finance. 
+                            I have coded a Monte Carlo Simulation in Python, a cryptocurrency in Java, as well as a program for algorithmic trading and stock analysis..
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class = "wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#dadada" fill-opacity="1" d="M0,32L60,37.3C120,43,240,53,360,90.7C480,128,600,192,720,224C840,256,960,256,1080,224C1200,192,1320,128,1380,96L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <a name = "skills"></a>
+        <div class = "skills">
+            <div class = "container">
+                <h1 class = "text-center">My Skills</h1>
+                <div class = "row">
+                    <div class = "col-lg-4 col-md-4 col-sm-12 d-flex align-items-stretch">
+                        <div class = "card bg-light">
+                            <div class = "card-img">
+                                <img src = "./assets/icons/code.svg" alt = "" width = "100" height = "100" class = "card-img-top">
+                            </div>
+                            <div class = "card-body">
+                                <h5 class="card-title">Programming</h5>
+                                <p class = "card-text">
+                                    I love programming and have been coding since I was 12. I have competed in the Canadian Computing Competition, Google Code-in, and Google Kickstart.
+                                    <br>I am fluent in Python, Java, C#, JavaScript, Go, Octave, HTML5, and CSS3. 
+                                    <br><br>I've created a variety of projects, which can be seen on my GitHub.
+                                </p>
+                                <a href="https://github.com/kchatr" target = "_blank" class="btn btn-outline-secondary btn-block">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-lg-4 col-md-4 col-sm-12 d-flex align-items-stretch">
+                        <div class = "card bg-light">
+                            <div class = "card-img">
+                                <img src = "./assets/icons/gear-fill.svg" alt = "" width = "100" height = "100" class = "card-img-top">
+                            </div>
+                            <div class = "card-body">
+                                <h5 class = "card-title">Machine Learning</h5>
+                                <p class = "card-text">
+                                    I'm incredibly passionate about machine learning and data analysis, and fascinated by how they are changing our world.
+                                    I'm constantly learning about the field and how its incredible potential can be used.
+                                    <br><br>I have written Python programs relating to data science and an image classifier using a Convolutional Neural Network and Microsoft Azure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class = "col-md-3 col-lg-3 col-sm-12">
+                        <div class = "card">
+                            <div class = "card-img">
+                                <img src = "./assets/icons/grid-3x3-gap.svg" alt = "" width = "100" height = "100" class = "card-img-top">
+                            </div>
+                            <div class = "card-body">
+                                <h5 class = "card-title">Blockchain</h5>
+                                <p class = "card-text">
+                                    Blockchain is a technology that is redefining how we think about storing and manipulating data.
+                                    I have created a blockchain in Java, 
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class = "col-lg-4 col-md-4 col-sm-12 d-flex align-items-stretch">
+                        <div class = "card bg-light">
+                            <div class = "card-img">
+                                <img src = "./assets/icons/bar-chart-fill.svg" alt = "" width = "100" height = "100" class = "card-img-top">
+                            </div>
+                            <div class = "card-body">
+                                <h5 class = "card-title">Mathematics</h5>
+                                <p class = "card-text">
+                                    Mathematics is my forte. Combinatorics, Probability, and Calculus are my favourite fields and I am constantly looking to expand my knowledge.
+                                    <br><br>I have created numerous mathematical programs in Java and love exploring the beauty of math.
+                                    <br><br>I also participate in a variety of math competitions, including Math Kangaroo and contests from the University of Waterloo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

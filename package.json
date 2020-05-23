@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A portfolio website for the author",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"\""
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "Kaushik Chatterjee",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-icons": "^1.0.0-alpha3",
+    "jquery": "^3.5.1"
+  }
+}
