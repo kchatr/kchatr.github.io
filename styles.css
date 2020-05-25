@@ -2,6 +2,25 @@ html{
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar{
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+  background: #007BFF;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient(top, white 0%, rgb(118, 161, 207) 50%,rgb(11, 100, 194) 100%)
+}
+
+html{
+  max-height: 2px;
+  overflow-y: scroll;
+}
+
 .navbar{
     background: rgb(0, 151, 221) !important;
 }
