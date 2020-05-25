@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  --primary-color: #1392db;
 }
 
 body::-webkit-scrollbar{
@@ -7,7 +8,7 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-track{
-  background: #007BFF;
+  background: var(--primary-color);
   box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
 }
 
@@ -22,7 +23,7 @@ html{
 }
 
 .navbar{
-    background: rgb(0, 151, 221) !important;
+    background: var(--primary-color) !important;
 }
 
 /* .navbar-scroll{
@@ -56,7 +57,7 @@ html{
 }
 
 .bg-light{
-    background-color: #007BFF !important;   
+    background-color: var(--primary-color) !important;   
 }
 #typing-animation{
     position: relative;
@@ -135,7 +136,7 @@ html{
 }
 
 .description h1{
-    color: #1392db;
+    color: var(--primary-color);
 }
 
 .description p{
@@ -146,8 +147,8 @@ html{
 }
 
 .description button{
-    border:1px  solid rgb(19, 146, 219);
-    background:rgb(19, 146, 219);
+    border:1px  solid var(--primary-color);
+    background: var(--primary-color);
     color:#fff;
 }
 
@@ -223,7 +224,7 @@ html{
 }
 
 .about h1{
-    color: rgb(19, 146, 219);
+    color: #539eca;
     margin-top: 3em;
     margin-bottom: 1.5em;
 }
@@ -242,11 +243,11 @@ html{
 
 .about .desc{
     padding: 2em;
-    border-left:4px solid #10828C;
+    border-left:4px solid #539eca;
 }
 
 .about .desc h3{
-    color: #10828C;
+    color: #539eca;
 }
 .about .desc p{
     line-height:2;
@@ -264,7 +265,7 @@ html{
 
 .card-title{
   text-align: center;
-  color: #1392db;
+  color: var(--primary-color);
 }
 .card-img{
   filter: invert(91%) sepia(0%) saturate(3552%) hue-rotate(43deg) brightness(92%) contrast(105%);
