@@ -11,6 +11,8 @@
         rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
         crossorigin="anonymous" 
         >
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <link href="https://unpkg.com/pattern.css" rel="stylesheet">
         <script src='main.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
@@ -43,7 +45,7 @@
                         <a class = "nav-link" data-value = "skills" href = "#skills">Skills</a>
                     </li>
                     <li class = "nav-item">
-                        <a class = "nav-link" data-value = "projects" href = "#projects">Portfolio</a>
+                        <a class = "nav-link" data-value = "portfolio" href = "#portfolio">Portfolio</a>
                     </li>
                     <!-- <li class = "nav-item">
                         <a class = "nav-link" data-value = "articles" href = "#articles">Articles</a>
@@ -135,6 +137,7 @@
                     </div>
             </div>
         </div>
+
         <div class = "wave-container">
             <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#1392db" fill-opacity="1" d="M0,96L60,128C120,160,240,224,360,213.3C480,203,600,117,720,85.3C840,53,960,75,1080,101.3C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
@@ -145,9 +148,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#1392db" fill-opacity="1" d="M0,32L60,64C120,96,240,160,360,176C480,192,600,160,720,122.7C840,85,960,43,1080,53.3C1200,64,1320,128,1380,160L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
             </svg>
+            <a name = "skills"></a>
         </div>
+        
 
-        <a name = "skills"></a>
+        
         <div class = "skills">
             <div class = "container">
                 <h1 class = "text-center">My Skills</h1>
@@ -230,6 +235,63 @@
                 )
             });
         </script>
+        </div>
+        <div class = "wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#1392db" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,85.3C480,75,600,117,720,160C840,203,960,245,1080,266.7C1200,288,1320,288,1380,288L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+            </svg>
+        </div>
+
+        <a name = "portfolio"></a>
+        <div class = "portfolio">
+            <div class = "container">
+                <h1 class = "text-center">Portfolio</h1>
+                <div align = "center">
+                    <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+                        <button class = "btn btn-primary filter-button" data-filter = "all">All</button>
+                        <button class = "btn btn-primary filter-button" data-filter = "article">Articles</button>
+                        <button class = "btn btn-primary filter-button" data-filter = "project">Projects</button>
+                    </div>
+
+                </div>
+                <div class = "row">
+                    <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter article">
+                        <img src = "./img/portfolio/article-1.jpg" class = "img-responsive">
+                    </div>
+                    <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter article">
+                        <img src = "./img/portfolio/article-2.jpg" class = "img-responsive">
+                    </div>
+                    <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter article">
+                        <img src = "./img/portfolio/article-3.jpg" class = "img-responsive">
+                    </div>
+                    <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter project">
+                        <img src = "./img/portfolio/project-2.jpg" class = "img-responsive">
+                    </div>
+                    <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter project">
+                        <img src = "./img/portfolio/project-1.png" class = "img-responsive">
+                    </div>
+                    <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter project">
+                        <img src = "./img/portfolio/project-3.png" class = "img-responsive">
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $(".filter-button").click(function(){
+                        var value = $(this).attr("data-filter");
+                        if(value == "all"){
+                            $(".filter").show("1000");
+                        } else {
+                            $(".filter").not("." + value).hide("3000");
+                            $(".filter").filter("." + value).show("3000");
+                        }
+                    });
+                    if($(".filter-button").removeClass("active")){
+                        $(this).removeClass("active");
+                    }
+                    $(this).addClass('active');
+                });
+            </script>
         </div>
     </body>
 </html>

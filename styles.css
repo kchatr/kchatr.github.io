@@ -3,18 +3,18 @@ html{
   --primary-color: #1392db;
 }
 
-body::-webkit-scrollbar{
-  width: 10px;
+html::-webkit-scrollbar{
+  width: 6.5px;
 }
 
-body::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track{
   background: var(--primary-color);
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 
-body::-webkit-scrollbar-thumb{
-  border-radius: 10px;
-  background-image: -webkit-linear-gradient(top, white 0%, rgb(118, 161, 207) 50%,rgb(11, 100, 194) 100%)
+html::-webkit-scrollbar-thumb{
+  border-radius: 30px;
+  background-image: -webkit-linear-gradient(top, white 0%, rgb(118, 161, 207) 50%,rgb(11, 100, 194) 100%);
 }
 
 html{
@@ -217,7 +217,7 @@ html{
 
 .about{
     margin-top: 0em;
-    margin-bottom: 10em;
+    margin-bottom: 6em;
     padding: 0px;
     position: relative;
 
@@ -255,7 +255,10 @@ html{
 }
 
 .skills{
-  background-color: #1392db;
+  background-color: var(--primary-color);
+  padding: 0px;
+  position: relative;
+
 }
 
 .skills h1{
@@ -277,4 +280,49 @@ html{
 
 .card:hover{
   box-shadow: -2px 9px 40px -12px rgba(255, 255, 255, 0.75);
+}
+
+.portfolio{
+  margin-top: 0em;
+  position: relative;
+}
+
+.portfolio h1{
+  color: var(--primary-color);
+  margin: 2em;
+}
+
+.portfolio img{
+  width:  100%;
+  height: 16.5rem;
+  margin: 1em;
+}
+
+.show{
+  display: block;
+}
+
+.btn:hover {
+  background-color: rgb(76, 186, 250);
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.gallery_product:after {
+  content: '\A';
+  position: absolute;
+  width: 22rem; 
+  height: 16.5rem;
+  top: 5.1%; 
+  left: 7.8%;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: all 0.75s;
+  -webkit-transition: all 0.75s;
+}
+.gallery_product:hover:after {
+  opacity:1;
 }

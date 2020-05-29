@@ -1,3 +1,4 @@
 #Don't track content of following folders:
 node_modules/
 assets/icons/
+img/
