@@ -3,6 +3,7 @@ html{
   --primary-color: #1392db;
   max-height: 2px;
   overflow-y: scroll;
+  background-color: var(--primary-color);
 }
 
 html::-webkit-scrollbar{
@@ -334,6 +335,33 @@ html::-webkit-scrollbar-thumb{
   transition: all 0.75s;
   -webkit-transition: all 0.75s;
 }
+
 .gallery_product:hover:after {
   opacity:1;
+}
+
+.contact-form{
+  margin-bottom: 4em;
+  position: relative;
+  background-color: var(--primary-color);
+}
+
+.contact-form h1{
+  padding: 2em 1px;
+  color: #FFF;
+}
+
+.contact-form .right{
+  max-width: 600px;
+}
+
+.contact-form .right .btn-secondary{
+  background: var(--primary-color);
+  color: #FFF;
+  border: 0;
+}
+
+.contact-form .right .form-control::placeholder{
+  color: #888;
+  font-size: 16px;
 }
