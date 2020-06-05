@@ -397,8 +397,9 @@ html::-webkit-scrollbar-thumb{
 }
 
 .contact-form{
-  margin-bottom: 4em;
+  margin-bottom: 0em;
   position: relative;
+  height: 19em;
   background-color: var(--primary-color);
 }
 
