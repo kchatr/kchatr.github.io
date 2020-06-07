@@ -20,6 +20,10 @@ html::-webkit-scrollbar-thumb{
   background-image: -webkit-linear-gradient(top, white 0%, rgb(118, 161, 207) 50%,rgb(11, 100, 194) 100%);
 }
 
+.bi-soundwave{
+  color: white !important;
+}
+
 .divider{
   position: relative;
   margin-bottom: 4em;
@@ -379,7 +383,7 @@ html::-webkit-scrollbar-thumb{
   color: white;
 }
 
-.gallery_product:after {
+/* .gallery_product:after {
   content: '\A';
   position: absolute;
   width: 22rem; 
@@ -394,12 +398,41 @@ html::-webkit-scrollbar-thumb{
 
 .gallery_product:hover:after {
   opacity:1;
+} */
+
+.portfolio-overlay {
+  content: '\A';
+  position: absolute;
+  width: 22rem; 
+  height: 16.5rem;
+  top: 5.1%; 
+  left: 7.8%;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: all 0.75s;
+  -webkit-transition: all 0.75s;
+}
+
+.gallery_product:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .contact-form{
   margin-bottom: 0em;
   position: relative;
-  height: 19em;
+  height: 26em;
   background-color: var(--primary-color);
 }
 
@@ -436,7 +469,7 @@ html::-webkit-scrollbar-thumb{
   width: 90px;
   height: 90px;
   background: #FFF;
-  margin: 10px;
+  margin-top: -25px;
   border-radius: 40%;
   box-shadow: 0 5px 15px -5px #000070;
   color: var(--primary-color);
