@@ -419,7 +419,7 @@ html::-webkit-scrollbar-thumb{
 
 .portfolio-text {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -427,6 +427,50 @@ html::-webkit-scrollbar-thumb{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+
+.link-btn{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #FFF;
+  border-radius: 40%;
+  box-shadow: 0 5px 15px -5px #000070;
+  color: var(--primary-color);
+  overflow: hidden;
+  position: sticky;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(115%, 20%);
+}
+
+.link-btn i{
+  line-height: 50px;
+  font-size: 16px;
+  transition: 0.2s linear;
+}
+
+.link-btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+
+}
+
+.link-btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: var(--primary-color);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.link-btn:hover::before{
+  animation: anim 0.7s 1;
+  top: -10%;
+  left: -10%;
 }
 
 .contact-form{
