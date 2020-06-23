@@ -1,4 +1,5 @@
 #Don't track content of following folders:
 node_modules/
 assets/icons/
+assets/favicon_io
 img/
