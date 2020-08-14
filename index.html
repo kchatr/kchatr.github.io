@@ -11,6 +11,7 @@
         rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
         crossorigin="anonymous" 
         >
+        <script src="https://kit.fontawesome.com/5d93498de8.js" crossorigin="anonymous"></script>
         <script src='main.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -18,6 +19,7 @@
         <link href="https://unpkg.com/pattern.css" rel="stylesheet">
         <noscript>Your browser does not support or is blocking JavaScript</noscript>
         <title>🅚 | 🅒</title>
+        <link rel="shortcut icon" href="./assets/favicon_io/favicon.ico" type="image/x-icon">
     </head>
 
     <body onload = "location.href='#'">
@@ -99,7 +101,10 @@
                     <!-- <a href="#about" class="btn btn-primary btn-lg" role="button" aria-disabled="true">View more</a> -->
                 </div>
                 <!--HTML for the Wave Animation-->
-                <svg class="editorial"
+                
+            </div>
+        </header>
+        <svg class="editorial"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 24 150 28 "
@@ -126,14 +131,13 @@
                 <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
                 </g>
             </svg>
-            </div>
-        </header>
 
         <!--About Me section-->
         <a name="about"></a>
         <div class = "about">
             <div class = "container">
                 <h1 class = "text-center" id = "about-me">About Me</h1>
+                <div class = "divider div-transparent div-dot"> </div>
                 <div class = "row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="pattern-dots-md blue">
@@ -179,6 +183,7 @@
         <div class = "skills">
             <div class = "container">
                 <h1 class = "text-center">My Skills</h1>
+                <div class = "divider div-transparent-2 div-dot-2"> </div>
                 <div class = "row">
                     <div class = "col-lg-4 col-md-4 col-sm-12 d-flex align-items-stretch">
                         <div class = "card border-secondary">
@@ -239,38 +244,40 @@
                                 </p>
                             </div>
                         </div>
-                    </div>  
+                    </div> 
+                    <script>
+                        $(document).ready(function(){
+                            $(".col-lg-4").hover(
+                                function(){
+                                    $(this).animate({
+                                        marginTop: "-=1%"
+                                    }, 200);
+                                },
+                                function(){
+                                    $(this).animate({
+                                        marginTop: "0%"
+                                    }, 200)
+                                }
+                            )
+                        });
+                    </script> 
                 </div>
             </div>
-            <script>
-            $(document).ready(function(){
-                $(".col-lg-4").hover(
-                    function(){
-                        $(this).animate({
-                            marginTop: "-=1%"
-                        }, 200);
-                    },
-                    function(){
-                        $(this).animate({
-                            marginTop: "0%"
-                        }, 200)
-                    }
-                )
-            });
-        </script>
         </div>
         <!--Divider to next section-->
         <div class = "wave-container">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#1392db" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,85.3C480,75,600,117,720,160C840,203,960,245,1080,266.7C1200,288,1320,288,1380,288L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
             </svg>
+            <a name = "portfolio"></a>
         </div>
 
         <!--Portfolio Section-->
-        <a name = "portfolio"></a>
+
         <div class = "portfolio">
             <div class = "container">
                 <h1 class = "text-center">Portfolio</h1>
+                <div class = "divider div-transparent div-dot"> </div>
                 <div align = "center">
                     <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
                         <button class = "btn btn-primary waves-effect waves-light filter-button" data-filter = "all">All</button>
@@ -282,21 +289,69 @@
                 <div class = "row">
                     <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter article">
                         <img src = "./img/portfolio/article-1.jpg" class = "img-responsive">
+                        <div class = "portfolio-overlay">
+                            <div class="portfolio-text">
+                                An introductory article to univariate linear regression and gradient descent in machine learning, looking at the mathematics and intuition behind regression.
+                                <a class = "link-btn" href = https://medium.com/datadriveninvestor/the-essence-of-machine-learning-2650e409584e target = "_blank">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter article">
                         <img src = "./img/portfolio/article-2.jpg" class = "img-responsive">
+                        <div class = "portfolio-overlay">
+                            <div class="portfolio-text">
+                                An article that details the mathematics of Bayes' Theorem and its implications in the field of behavioural economics.
+                                <a class = "link-btn" href = https://medium.com/datadriveninvestor/bayes-theorem-and-its-implications-in-behavioural-economics-eb7129afef77 target = "_blank">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter article">
-                        <img src = "./img/portfolio/article-3.jpg" class = "img-responsive">
+                        <img src = "/img/portfolio/article-3.jpg" class = "img-responsive">
+                        <div class = "portfolio-overlay">
+                            <div class="portfolio-text">
+                                An article that provides an introduction to machine learning and a holistic view on its various forms and use cases.
+                                <a class = "link-btn" href = https://medium.com/@kchatr/unearthing-the-layers-of-machine-learning-20b2738758ea target = "_blank">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter project">
                         <img src = "./img/portfolio/project-2.jpg" class = "img-responsive">
+                        <div class = "portfolio-overlay">
+                            <div class="portfolio-text">
+                                A local blockchain-based cryptocurrency that was created in Java and uses cryptography and hashing, following protocols similar to Bitcoin. 
+                                <a class = "link-btn" href = https://github.com/kchatr/Indicium-Blockchain target = "_blank">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter project">
                         <img src = "./img/portfolio/project-1.png" class = "img-responsive">
+                        <div class = "portfolio-overlay">
+                            <div class="portfolio-text">
+                                This is a convolutional neural network (CNN) created in Azure which can accurately identify images of dogs and cats.
+                                <a class = "link-btn" href = https://github.com/kchatr/CNN-ImageClassifier target = "_blank">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class = "gallery_product col-lg-4 col-md-4 col-sm-12 filter project">
                         <img src = "./img/portfolio/project-3.png" class = "img-responsive">
+                        <div class = "portfolio-overlay">
+                            <div class="portfolio-text">
+                                A Monte Carlo simulation in Python which simulates the winnings of a player in a chance-based spinner, akin to roulette.
+                                <a class = "link-btn" href = https://github.com/kchatr/monte-python target = "_blank">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -328,6 +383,7 @@
             </svg>
         </div>
 
+        <a name = "contact"></a>
         <div class = "contact-form">
             <div class = "container">
                 <form>
@@ -352,8 +408,20 @@
                     </div>
                 </form>
             </div>
+            <div class = "social-media">
+                <a class = "media-btn" href = https://github.com/kchatr target = "_blank">
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a class = "media-btn" href = https://linkedin.com/in/kchatr target = "_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a> 
+                <a class = "media-btn" href = https://medium.com/@kchatr target = "_blank">
+                    <i class="fab fa-medium"></i>
+                </a> 
+            </div>
         </div>
-        <footer class = "py-1 bg-dark text-white-50">
+        
+        <footer class = "footer py-2 bg-dark text-white-50">
             <div class="footer-copyright text-center py-3">© 2020 Copyright:
                 <a href="https://github.com/kchatr">Kaushik Chatterjee</a>
                 All Rights Reserved. 
